@@ -18,3 +18,5 @@ spring:
 jwt:
   secret-key: microservice-secret-key-springboot-2026-demo-security-configuration
   expiration: 86400000
+server:
+  port: 8081
