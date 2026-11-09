@@ -16,7 +16,7 @@ public class JwtUtils {
     private String secretKey;
 
     private SecretKey getSecretKey(){
-        return Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8)); // nếu chứa kí tự đặc biệt
+        return Keys.hmacShaKeyFor(secretKey.getBytes()); // nếu chứa kí tự đặc biệt
     }
 
 
